@@ -31,7 +31,7 @@ The `buildMetadata(sample)` function processes and displays demographic informat
 - **Extract Metadata**: Filters metadata for the selected sample.
 - **Display**: Appends metadata to the demographics panel as paragraphs.
 
-![Demographic Information](images/demo_info.png)
+![Demographic Information](images/demo_info.png)<br>
 *Figure 1: Demographic Information Panel displaying selected sample’s metadata, providing insights into the diversity and characteristics of the microbial communities present.*
 
 ### 3. Build Bar Chart 📊
@@ -40,13 +40,12 @@ The `buildBarChart(sample)` function creates a bar chart of the top 10 OTUs foun
 
 - **Data Preparation**: Fetches data, filters by sample ID, and prepares data for plotting.
 - **Plotly Rendering**: Configures and renders the bar chart using Plotly.
-
-HTML element required:
 ```html
+HTML element required:
 <div id="bar"></div>
 ```
 
-![Bar Chart](images/bar_chart.png)
+![Bar Chart](images/bar_chart.png)<br>
 *Figure 2: Bar chart visualization showing the top 10 Operational Taxonomic Units (OTUs) identified in the selected sample.*
 
 ### 4. Build Bubble Chart 🔵
@@ -55,24 +54,22 @@ The `buildBubbleChart(sample)` follows a similar process to the bar chart but vi
 
 - **Marker Setup**: Configures the appearance of bubbles based on sample values.
 - **Plotly Rendering**: Uses Plotly to plot the bubble chart.
-
-HTML element required:
 ```html
+HTML element required:
 <div id="bubble"></div>
 ```
 
-![Bubble Chart](images/bubble_chart.png)
+![Bubble Chart](images/bubble_chart.png)<br>
 *Figure 3: Bubble chart visualization depicting the distribution and abundance of microbial species across different samples. Each bubble’s size is proportional to the frequency of the OTUs.*
 
 ### 5. Event Listener for Dropdown Changes 🔄
 
 Changes in the dropdown menu invoke the `optionChanged(sample)` function directly from HTML:
-
 ```html
 <select id="selDataset" onchange="optionChanged(this.value)"></select>
 ```
 
-![Dropdown Menu](images/dropdown_menu.png)
+![Dropdown Menu](images/dropdown_menu.png)<br>
 *Figure 4: Dropdown menu for selecting a sample ID, triggering updates across all visualizations on the dashboard.*
 
 ## Learn More 📺
